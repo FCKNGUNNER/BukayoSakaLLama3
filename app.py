@@ -15,4 +15,4 @@ st.title('Генератор ответов от Ламы')
 prompt = st.text_input("Ваш вопрос:", "Задайте вопрос Ламе...")
 if st.button('Ответить'):
     response = generate_response(prompt)
-    st.write(f"Лама: {response}")
+    st.markdown(f"**Ответ:** {response}")
